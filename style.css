@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 
@@ -21,6 +22,51 @@ main::after {
     background-color: black;    
 } 
 
+#logo {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+#logo img {
+    height: 60%;
+    margin-left: 5%;
+}
+
+.actions-list {
+    height: calc(100% - 80px);
+    border: 1px solid yellow;
+}
+
+.links {
+  height: 15%;
+  border: solid 1px green;
+}
+
+.playlist {
+    height: 70%;
+    border: solid 1px tomato;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.install-section {
+    height: 15%;
+    border: 1px solid fuchsia;
+    color: white;
+}
+
+.install-section img {
+    height: 30px;
+    width: 30px;
+    color: white;
+    background-color: lightgray;
+    border-radius: 30px;
+}
+
 
 /*--------CONTENITORE ALBUM-------*/
 .container {
@@ -28,6 +74,7 @@ main::after {
     width: 80%;
     background-color: rgb(20, 25, 34);
     float: left;
+    overflow-y: scroll;
 }
 
 .content-row {
