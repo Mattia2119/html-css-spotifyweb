@@ -14,12 +14,17 @@ main::after {
     content: "";
 }
 
+.box {
+    display: flex;
+}
+
 /*------SIDEBAR-------*/
 #side-bar {
     float: left;
     height:calc(100vh - 90px);
     width: 20%;
-    background-color: black;    
+    background-color: black; 
+    font-size: 15px;   
 } 
 
 #logo {
@@ -37,34 +42,104 @@ main::after {
 
 .actions-list {
     height: calc(100% - 80px);
-    border: 1px solid yellow;
+    padding: 0 3%;
 }
+
+/*Links section*/
 
 .links {
   height: 15%;
-  border: solid 1px green;
+  display: flex;
+  align-items: center;
+  padding: 0 3%;
 }
 
+.links i {
+    font-size: 20px;
+}
+
+.links ul {
+    list-style: none;
+}
+
+.links ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/*Playlist section*/
+
 .playlist {
-    height: 70%;
-    border: solid 1px tomato;
+    height: 65%; 
     display: flex;
     flex-direction: column;
     color: white;
+    padding: 10px 3%;
 }
+
+.playlist .box {
+    margin-bottom: 10px;
+}
+
+.btn-add,.fa-plus-square {
+    font-size: 40px;
+    margin-bottom: 20px;
+    transform: translateY(25%);
+}
+
+.btn-add-text {
+    margin-left: 10px;
+}
+
+.playlist h2 {
+    font-size: 18px;
+}
+
+.playlist ul li {
+    padding-bottom: 15px;
+    font-size: 13px;
+    list-style: none;
+}
+
+.playlist a {
+    text-decoration: none;
+    list-style: none;
+    color: lightgray;
+}
+
+/*Install section*/
 
 .install-section {
-    height: 15%;
-    border: 1px solid fuchsia;
-    color: white;
+    height: 10%;
+    border-bottom: 1px solid lightgray;
+    display:flex;
+    align-items: flex-end;
+    padding-bottom: 15px;
+    padding-left: 3%;
 }
 
-.install-section img {
+.install-section a {
+    color: white;
+    text-decoration: none;
+}
+
+/*account section*/
+
+.account-section {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 0 3%;
+}
+
+.account-section img {
     height: 30px;
     width: 30px;
     color: white;
-    background-color: lightgray;
+    background-color: gray;
     border-radius: 30px;
+    margin-right: 10px;
 }
 
 
@@ -78,7 +153,6 @@ main::after {
 }
 
 .content-row {
-    border: 1px solid white;
     height: calc(100% - 80px);
     display: flex;
 }
