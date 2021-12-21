@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
 
@@ -19,6 +19,18 @@ main::after {
     content: "";
 }
 
+#side-bar::after {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+.container::after {
+    clear: both;
+    display: table;
+    content: "";
+}
+
 .box {
     display: flex;
 }
@@ -27,7 +39,7 @@ main::after {
 #side-bar {
     float: left;
     height:calc(100vh - 90px);
-    width: 20%;
+    width: 250px;
     background-color: black; 
     font-size: 15px;   
 } 
@@ -155,10 +167,11 @@ main::after {
 /*--------CONTENITORE ALBUM-------*/
 .container {
     height: calc(100vh - 90px);
-    width: 80%;
+    width: calc(100% - 250px);
     background-color: rgb(20, 25, 34);
     float: left;
     overflow-y: scroll;
+    scrollbar-width: thin;
 }
 
 .big-container {
@@ -197,6 +210,17 @@ main::after {
     color: white;
     font-size: 20px;
     padding-left: 23px;
+}
+
+.main-content {
+    height: 100%;
+    width: 100%;
+    padding-top: 90px;
+}
+
+.main-content img {
+    height: 150px;
+    width: 150px;
 }
 
 .content {
@@ -255,15 +279,17 @@ main::after {
 
 /*--tob-bar--*/
 .top-bar {
-    width: 100%;
+    width: calc(100vw - 270px);
     height: 80px;
-    background-color: rgb(8, 11, 18);  
+    background-color: rgb(8, 11, 18);
+    position: fixed;
 }
 
 .top-bar .content {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    position: absolute;
 }
 
 .top-bar a {
