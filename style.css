@@ -156,10 +156,36 @@ main::after {
     overflow-y: scroll;
 }
 
+.big-container {
+    display: flex;
+}
+
+.big-container h4 {
+    margin-top: 10px;
+    font-size: 12px;
+    color: white;
+}
+
+.big-container p {
+    font-size: 12px;
+    color: gray;
+}
+
 .content-row {
     height: calc(100% - 80px);
     display: flex;
-    flex-wrap: wrap;
+}
+
+.text-row {
+    border: 1px solid yellow;
+    height: 30px;
+    width: 100%;
+    margin-top: 3px;
+}
+
+.text-row h2 {
+    color: white;
+    font-size: 20px;
 }
 
 .content {
@@ -167,21 +193,37 @@ main::after {
     width: 100%;
 }
 
+.content img {
+    height: 150px;
+    width: 150px;
+}
+
+.cover-box {
+    border: 1px solid yellow;
+    height: 250px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
 /*content-menu*/
 
-.content-menu {
+.main-menu {
     height: 6%;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.content-menu ul {
+.main-menu ul {
     height: 100%;
     display: flex;
 }
 
-.content-menu ul li {
+.main-menu ul li {
     display: inline-block;
     font-size: 14px;
     margin-right: 20px;
@@ -190,7 +232,7 @@ main::after {
 
 }
 
-.content-menu a {
+.main-menu a {
     padding-top: 10px;
     color: lightgray;
     text-decoration: none;
@@ -242,26 +284,27 @@ footer .content {
 }
 
 .left-side img {
-    height: 40px;
+    width: 60px;
+    height: 60px;
     position: absolute;
     left: 5px;
-    top: 25%;
+    top: calc(50% - 30px);
 }
 
 .left-side h4 {
      color: white;
      font-size: 14px;
      position: absolute;
-     left: 55px;
-     top: 30px;
+     left: 75px;
+     top: 35px;
 }
 
 .left-side p {
     font-size: 12px;
     color: gray;
     position: absolute;
-    left: 55px;
-    top: 43px;
+    left: 75px;
+    top: 48px;
 }
 
 .left-side i {
