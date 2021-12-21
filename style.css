@@ -59,7 +59,7 @@ main::after {
 
 .actions-list {
     height: calc(100% - 80px);
-    padding: 0 3%;
+    padding: 0 6%;
 }
 
 /*Links section*/
@@ -68,7 +68,17 @@ main::after {
   height: 15%;
   display: flex;
   align-items: center;
-  padding: 0 3%;
+}
+
+.links-line {
+    width: 3px;
+    height: 36px;
+    border: 1px solid lime;
+    border-radius: 3px;
+    background-color: lime;
+    position: relative;
+    bottom: 28px;
+    right: 14px;
 }
 
 .links i {
@@ -91,7 +101,7 @@ main::after {
     display: flex;
     flex-direction: column;
     color: white;
-    padding: 10px 3%;
+    padding: 10px 0px;
 }
 
 .playlist .box {
@@ -255,7 +265,16 @@ main::after {
     display: flex;
     justify-content: center;
 }
-
+.main-menu-line {
+    border: 1px solid lime;
+    background-color: lime;
+    border-radius: 2px;
+    width: 45px;
+    height: 0px;
+    position: relative;
+    top: 33px;
+    left: 75px;
+}
 .main-menu ul {
     height: 100%;
     display: flex;
@@ -283,6 +302,7 @@ main::after {
     height: 80px;
     background-color: rgb(8, 11, 18);
     position: fixed;
+    z-index: 2;
 }
 
 .top-bar .content {
