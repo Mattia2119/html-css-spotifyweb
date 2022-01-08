@@ -91,6 +91,10 @@ main::after {
 
 .links ul li a {
     text-decoration: none;
+    color: rgb(88, 88, 88);
+}
+
+.links ul li a:hover {
     color: white;
 }
 
@@ -135,7 +139,11 @@ main::after {
 
 .playlist a {
     text-decoration: none;
-    color: lightgray;
+    color: rgb(88, 88, 88);
+}
+
+.playlist a:hover {
+    color: white;
 }
 
 /*Install section*/
@@ -150,17 +158,21 @@ main::after {
 }
 
 .install-section a {
-    color: white;
+    color: rgb(88, 88, 88);
     text-decoration: none;
 }
 
+.install-section a:hover {
+    color: white;
+}
+   
 /*account section*/
 
 .account-section {
     height: 10%;
     display: flex;
     align-items: center;
-    color: white;
+    color: rgb(88, 88, 88);
     padding: 0 3%;
 }
 
@@ -291,9 +303,13 @@ main::after {
 
 .main-menu a {
     padding-top: 10px;
-    color: lightgray;
+    color: rgb(88, 88, 88);
     text-decoration: none;
     align-items: center;
+}
+
+.main-menu a:hover {
+    color: white;
 }
 
 /*--tob-bar--*/
@@ -320,6 +336,10 @@ main::after {
     border: 1px solid white;
     padding: 9px 30px;
     border-radius: 40px;
+}
+
+.top-bar a:hover {
+    font-size: 16px;
 }
 
 
@@ -369,6 +389,10 @@ footer .content {
 .left-side i {
     color: gray;
     font-size: 18px;
+}
+
+.left-side i:hover {
+    color: white;
 }
 
 .left-side .content {
@@ -436,7 +460,10 @@ footer .content {
     top: 4px;
 }
 
-
+#play-btn:hover {
+    font-size: 30px;
+    top: 6px;
+}
 
 /*right-side*/
 .right-side {
