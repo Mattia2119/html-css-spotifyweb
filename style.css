@@ -258,7 +258,7 @@ main::after {
 .cover-box {
     height: 220px;
     width: 200px;
-
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -267,6 +267,30 @@ main::after {
 
 .round {
     border-radius: 50%;
+}
+
+.link-box {
+    text-decoration: none;
+}
+
+.overlay {
+    
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay .fa-play-circle {
+    color: white;
+    font-size: 40px;
+}
+
+.cover-box:hover .overlay {
+    display: flex;
 }
 
 /*content-menu*/
