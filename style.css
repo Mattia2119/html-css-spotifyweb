@@ -442,11 +442,31 @@ footer .content {
     background-color: gray;
 }
 
+
 .long-bar-line {
     height: 2px;
     border-radius: 2px;
-    background-color: lime;
+    background-color: lightgray;
     width: 80px;
+    position: relative;
+}
+
+.long-bar-line .pointer {
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    position: absolute;
+    right: 0px;
+    background-color: transparent;
+    transform: translateY(-3.5px);
+}
+
+.long-bar-line .pointer:hover {
+    background-color: white;
+}
+
+.long-bar-line:hover {
+    background-color: lime;
 }
 
 .center i {
@@ -494,6 +514,25 @@ footer .content {
 .line-bar {
     height: 2px;
     border-radius: 2px;
-    background-color: lime;
+    background-color: lightgray;
     width: 20px;
+    position: relative;
+}
+
+.line-bar:hover {
+    background-color: lime;
+}
+
+.line-bar .pointer {
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    position: absolute;
+    right: 0px;
+    background-color: transparent;
+    transform: translateY(-3.5px);
+}
+
+.line-bar .pointer:hover {
+    background-color: white;
 }
